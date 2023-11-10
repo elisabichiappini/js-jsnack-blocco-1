@@ -8,9 +8,9 @@ const parola1 = prompt ('inserisci prima parola');
 const parola2 = prompt ('inserisci seconda parola');
 
 if (parola1 > parola2){
-    console.log(parola1.value);
+    console.log(parola1, parola2);
 } else if (parola1 < parola2) {
-    console.log(parola2.value)
+    console.log(parola2, parola1);
 } else {
-    console.log('uguale lunghezza')
+    console.log('uguale lunghezza');
 };
