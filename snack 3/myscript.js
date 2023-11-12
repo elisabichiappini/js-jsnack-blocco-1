@@ -11,15 +11,15 @@ let count = 10;
 
 for (let i = 1; i <= count; i++) {
     //prompt: richiesta per utente
-    const currentNumber = Number(prompt(`${i} - Inserisci un numero`))
-    //verifico se l'utente inserisce solo numeri 
+    const currentNumber = Number(prompt(`${i} - Inserisci un numero`));
+    //verifico se l'utente inserisce solo numeri, qui dico, se diverso da NotANumber alloraa fai questa operazione
     if (!isNaN(currentNumber)) {
         console.log(`${i} - Hai inserito il numero ${currentNumber}`);
         //sommo il numero al risultato
         result += currentNumber;
         console.log(`${i} - La somma a questo punto è ${result}`);
     } else {
-        console.log(`${i} - Hai inserito un valore non numerico che è stato escluso dalla somma `)
+        console.log(`${i} - Hai inserito un valore non numerico che è stato escluso dalla somma`)
     }
 };
 
